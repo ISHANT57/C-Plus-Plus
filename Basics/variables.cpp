@@ -15,6 +15,8 @@ int main()
     y=50;
     cout << "The value of y is: " << y << endl;
     cout << "The value of y is: " << y+x << endl;
+
+    cout << "The value of y is: " << y/x << endl;
     return 0;
 
 }
