@@ -14,7 +14,7 @@ int main() {
     for (int i = 0; i <= s.length(); i++) {
 
         // If space or end of string found
-        if (i == s.length() || s[i] == ' ') {
+        if (i == s.size() || s[i] == ' ') {
 
             // Reverse the word from start to i-1
             reverse(s.begin() + start, s.begin() + i);
