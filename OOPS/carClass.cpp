@@ -44,6 +44,9 @@ public:
 
 int main() {
     Car myCar("Bugatti", "Chiron", 2026, 30000.56);
+    Car myCar1("Audi", "R8", 2026, 30000.56);
     myCar.display();
+    cout << endl;
+    myCar1.display();
     return 0;
 }
