@@ -18,3 +18,4 @@ int main() {
     s1.setAge(20);
     s1.show();
 }
+ 
