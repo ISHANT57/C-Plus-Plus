@@ -9,13 +9,19 @@ public:
     double mileage;
 };
 
-void changeCar(Car &car) {   // 🔥 pass by reference
-    car.name = "Ferrari";
-    car.model = "488 Spider";
-    car.year = 2022;
-    car.mileage = 15000.75;
+void changeCar(Car *car) {   // 🔥 pass by reference
+    car->name = "Ferrari";
+    car->model = "488 Spider";
+    car->year = 2022;
+    car->mileage = 15000.75;
 }
 
+// void changeCar(Car &car) {   // 🔥 pass by reference
+//     car.name = "Ferrari";
+//     car.model = "488 Spider";
+//     car.year = 2022;
+//     car.mileage = 15000.75;
+// }
 int main() {
     Car myCar;
     myCar.name = "Lamborghini";
@@ -30,7 +36,7 @@ int main() {
     cout << myCar.mileage << endl;
 
 
-    changeCar(myCar);
+    changeCar(&myCar);
 
     cout << "After changeCar function:\n";
     cout << myCar.name << endl;
