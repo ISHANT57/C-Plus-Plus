@@ -8,8 +8,8 @@ int main(){
     cout << s << endl;
 
     cout << "\nCharacters in the string are: " << endl;
-    for(int i = 0; i < s.size(); i++){
-        cout << s[i] << endl;
+    for(int i = 0; i < s.length(); i++){
+        cout << s[i];
     }
 
     return 0;
